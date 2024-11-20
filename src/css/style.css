@@ -1,9 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: linear-gradient(
-        rgb(59,88,93),
-        rgb(29,40,42)
-    );
-    height: 100vh;
-    color: white;
-    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+}
+
+.music-player {
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.player-header h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.player-img {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.player-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.player-info {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.song-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.artist-name {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.progress-area {
+    margin: 20px 0;
+}
+
+.progress-bar {
+    height: 6px;
+    width: 100%;
+    background: #f0f0f0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    width: 0%;
+    background: #4CAF50;
+    border-radius: 50px;
+}
+
+.time-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.control-btn {
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.control-btn:hover {
+    color: #4CAF50;
+}
+
+.play-pause {
+    font-size: 2.2rem;
+}
+
+.favorite-btn {
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.favorite-btn i:hover {
+    color: red;
 }
